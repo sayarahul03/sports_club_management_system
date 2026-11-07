@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Rahul Sports Club - Action Moments & Facilities</title>
+  <meta name="description" content="Explore high-energy training sessions, match highlights, award ceremonies, and world-class athletic facilities at Rahul Sports Club.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">⚡</div>
+        <div>Rahul <span>Sports Club</span></div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="sports.html" class="nav-link">Sports & Programs</a>
+        <a href="coaches.html" class="nav-link">Coaches</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Join Now</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="sports.html" class="nav-link">Sports & Programs</a>
+    <a href="coaches.html" class="nav-link">Coaches</a>
+    <a href="gallery.html" class="nav-link active">Gallery</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Join Academy Now</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Visual Showcase</span>
+        <h1>Sports <span>Gallery</span></h1>
+        <p>Glimpses into intense training sessions, championship victories, state-of-the-art facilities, and athlete life.</p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> &gt; <span class="current">Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding">
+      <div class="container">
+        <!-- Filter Toolbar -->
+        <div class="filter-toolbar">
+          <button type="button" class="filter-btn active" data-gallery-filter="all">All Photos</button>
+          <button type="button" class="filter-btn" data-gallery-filter="training">Training</button>
+          <button type="button" class="filter-btn" data-gallery-filter="matches">Matches</button>
+          <button type="button" class="filter-btn" data-gallery-filter="facilities">Facilities</button>
+          <button type="button" class="filter-btn" data-gallery-filter="events">Events & Awards</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- 1. Training -->
+          <div class="gallery-item" data-category="training">
+            <img src="./images/gallery1.jpg" alt="High Intensity Strength & Conditioning">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>High Intensity Strength Training</h4>
+              <span>Training Session</span>
+            </div>
+          </div>
+
+          <!-- 2. Facilities -->
+          <div class="gallery-item" data-category="facilities">
+            <img src="./images/gallery2.jpg" alt="Olympic 400m Synthetic Track">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Olympic 400m Synthetic Track</h4>
+              <span>Outdoor Facilities</span>
+            </div>
+          </div>
+
+          <!-- 3. Facilities -->
+          <div class="gallery-item" data-category="facilities">
+            <img src="./images/gallery3.jpg" alt="High Performance Strength Lab">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Athletic Performance Strength Lab</h4>
+              <span>Indoor Facilities</span>
+            </div>
+          </div>
+
+          <!-- 4. Facilities -->
+          <div class="gallery-item" data-category="facilities">
+            <img src="./images/gallery4.jpg" alt="50m Heated Olympic Swimming Pool">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>50m Heated Olympic Swimming Pool</h4>
+              <span>Aquatic Complex</span>
+            </div>
+          </div>
+
+          <!-- 5. Events -->
+          <div class="gallery-item" data-category="events">
+            <img src="./images/gallery5.jpg" alt="Annual Sports Excellence Awards">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Annual Sports Excellence Awards</h4>
+              <span>Events & Ceremonies</span>
+            </div>
+          </div>
+
+          <!-- 6. Matches -->
+          <div class="gallery-item" data-category="matches">
+            <img src="./images/gallery6.jpg" alt="State Junior Football Championship Match">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Inter-Academy Football Cup</h4>
+              <span>Championship Match</span>
+            </div>
+          </div>
+
+          <!-- 7. Training -->
+          <div class="gallery-item" data-category="training">
+            <img src="./images/gallery7.jpg" alt="Turf Cricket Net Practice">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Cricket Pace & Batting Drills</h4>
+              <span>Training Session</span>
+            </div>
+          </div>
+
+          <!-- 8. Facilities -->
+          <div class="gallery-item" data-category="facilities">
+            <img src="./images/gallery8.jpg" alt="Modern Sports Equipment & Gear">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Professional Strength & Plyo Gear</h4>
+              <span>Equipment & Lab</span>
+            </div>
+          </div>
+
+          <!-- 9. Matches -->
+          <div class="gallery-item" data-category="matches">
+            <img src="./images/gallery9.jpg" alt="State Badminton Open Tournament">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>State Badminton Open Rally</h4>
+              <span>Tournament Match</span>
+            </div>
+          </div>
+
+          <!-- 10. Training -->
+          <div class="gallery-item" data-category="training">
+            <img src="./images/gallery10.jpg" alt="Sprint Biomechanics Drill">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Track Sprint & Hurdle Conditioning</h4>
+              <span>Training Session</span>
+            </div>
+          </div>
+
+          <!-- 11. Events -->
+          <div class="gallery-item" data-category="events">
+            <img src="./images/gallery11.jpg" alt="Championship Trophy Celebration">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Regional Trophy Presentation</h4>
+              <span>Victory Celebration</span>
+            </div>
+          </div>
+
+          <!-- 12. Training -->
+          <div class="gallery-item" data-category="training">
+            <img src="./images/gallery12.jpg" alt="Morning Athletic Yoga & Mobility">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon">🔍</div>
+              <h4>Athlete Mobility & Zen Yoga</h4>
+              <span>Recovery & Flexibility</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="galleryLightbox">
+      <button class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous Image">&#10094;</button>
+      <button class="lightbox-nav-btn lightbox-next-btn" aria-label="Next Image">&#10095;</button>
+      
+      <div class="lightbox-content-wrapper">
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption-bar">
+          <div class="lightbox-caption-title"></div>
+          <div class="lightbox-counter"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="container">
+      <div class="cta-banner-section">
+        <h2>Experience Our Facilities in Person</h2>
+        <p>Schedule a guided tour of our 15-acre sports complex and try a free session in your chosen sport.</p>
+        <div class="cta-btn-group">
+          <a href="contact.html" class="btn btn-primary btn-lg" style="background: #ffffff; color: var(--primary);">Book Campus Visit</a>
+          <a href="sports.html" class="btn btn-outline btn-lg">Explore Programs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-about">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
+            <div class="brand-icon">⚡</div>
+            <div>Rahul <span>Sports Club</span></div>
+          </a>
+          <p>
+            Rahul Sports Club is a premier multi-sports development center committed to delivering Olympic-grade coaching, sports science, and character-building for athletes of all ages.
+          </p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram">ig</a>
+            <a href="https://twitter.com" class="social-circle-btn" aria-label="Twitter">tw</a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About The Academy</a></li>
+            <li><a href="sports.html">Sports & Programs</a></li>
+            <li><a href="coaches.html">Expert Coaches</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact & Admission</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Sports Programs</h4>
+          <ul class="footer-links">
+            <li><a href="sports.html">Cricket Coaching</a></li>
+            <li><a href="sports.html">Football Academy</a></li>
+            <li><a href="sports.html">Badminton Training</a></li>
+            <li><a href="sports.html">Lawn Tennis</a></li>
+            <li><a href="sports.html">Swimming Academy</a></li>
+            <li><a href="sports.html">Strength & Fitness</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Visit Our Complex</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i>📍</i>
+              <span>Rahul Sports Arena, Sports City Road, Sector 21, New Delhi 110075</span>
+            </li>
+            <li>
+              <i>📞</i>
+              <span>+91 98765 43210 / 011-28034567</span>
+            </li>
+            <li>
+              <i>✉️</i>
+              <span>admissions@rahulsportsclub.com</span>
+            </li>
+            <li>
+              <i>⏰</i>
+              <span>Mon - Sun: 5:30 AM - 9:30 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Rahul Sports Club. All Rights Reserved. Train Hard. Play Strong. Become Champion.</div>
+        <div>Designed with Modern Pure HTML, CSS & Vanilla JS</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top">↑</button>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

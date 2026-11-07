@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports & Programs | Rahul Sports Club - Elite Athletic Training</title>
+  <meta name="description" content="Explore professional coaching programs in Cricket, Football, Badminton, Tennis, Swimming, Athletics, Strength & Conditioning at Rahul Sports Club.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">⚡</div>
+        <div>Rahul <span>Sports Club</span></div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="sports.html" class="nav-link active">Sports & Programs</a>
+        <a href="coaches.html" class="nav-link">Coaches</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Join Now</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="sports.html" class="nav-link active">Sports & Programs</a>
+    <a href="coaches.html" class="nav-link">Coaches</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Join Academy Now</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">High Performance Curricula</span>
+        <h1>Sports & <span>Training Programs</span></h1>
+        <p>Comprehensive athletic development pathways designed for grassroots enthusiasts to competitive champions.</p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> &gt; <span class="current">Sports & Programs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports Catalog & Filtering Section -->
+    <section class="section-padding">
+      <div class="container">
+        <!-- Filter Toolbar -->
+        <div class="filter-toolbar">
+          <button type="button" class="filter-btn active" data-filter="all">All Sports</button>
+          <button type="button" class="filter-btn" data-filter="team">Team Sports</button>
+          <button type="button" class="filter-btn" data-filter="individual">Individual Sports</button>
+          <button type="button" class="filter-btn" data-filter="fitness">Fitness Programs</button>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="cards-grid">
+          <!-- 1. Cricket -->
+          <div class="sport-card" data-category="team">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/cricket.jpg" alt="Cricket Training">
+              <span class="sport-badge-tag">Team Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Cricket Academy</h3>
+              <p class="sport-desc">Master batting mechanics, pace and spin bowling, tactical fielding drills, and match temperament on turf wickets.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">Beginner to Pro</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">3 - 12 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="cricket">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Football -->
+          <div class="sport-card" data-category="team">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/football.jpg" alt="Football Coaching">
+              <span class="sport-badge-tag">Team Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Football Academy</h3>
+              <p class="sport-desc">European tactical development, ball control under pressure, positional discipline, set plays, and league tournaments.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">Grassroots & Elite</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">3 - 12 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="football">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Basketball -->
+          <div class="sport-card" data-category="team">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/basketball.jpg" alt="Basketball Training">
+              <span class="sport-badge-tag">Team Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Basketball Program</h3>
+              <p class="sport-desc">High-tempo offense, perimeter shooting mechanics, defensive rebounding, court vision, and competitive matches.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">Novice to Advanced</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">3 - 6 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="basketball">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Badminton -->
+          <div class="sport-card" data-category="individual">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/badminton.jpg" alt="Badminton Coaching">
+              <span class="sport-badge-tag">Individual Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Badminton Academy</h3>
+              <p class="sport-desc">Explosive court movement, steep jump smashes, deceptive net play, stamina drills, and tournament strategy.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">All Skill Levels</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">3 - 12 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="badminton">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Lawn Tennis -->
+          <div class="sport-card" data-category="individual">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/tennis.jpg" alt="Tennis Academy">
+              <span class="sport-badge-tag">Individual Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Lawn Tennis</h3>
+              <p class="sport-desc">Heavy topspin groundstrokes, explosive serve biomechanics, volley reflexes, and strategic court coverage.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">Junior to Advanced</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">3 - 12 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="tennis">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Volleyball -->
+          <div class="sport-card" data-category="team">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/volleyball.jpg" alt="Volleyball Coaching">
+              <span class="sport-badge-tag">Team Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Volleyball Club</h3>
+              <p class="sport-desc">Jump spike power, pinpoint set distribution, defensive dig mechanics, and team rotation communication.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">Beginner to Advanced</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">3 - 6 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="volleyball">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Athletics -->
+          <div class="sport-card" data-category="individual">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/athletics.jpg" alt="Athletics & Track">
+              <span class="sport-badge-tag">Individual Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Athletics & Track</h3>
+              <p class="sport-desc">Sprint acceleration, hurdle cadence, long jump technique, endurance running, and running biomechanics.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">All Age Groups</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">6 - 12 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="athletics">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Swimming -->
+          <div class="sport-card" data-category="individual">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/swimming.jpg" alt="Swimming Academy">
+              <span class="sport-badge-tag">Individual Sport</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Swimming Academy</h3>
+              <p class="sport-desc">Freestyle, backstroke, breaststroke, butterfly stroke refinement, breathing rhythm, and racing turns.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">Beginner to Racing</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">1 - 6 Months</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="swimming">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Fitness & Strength -->
+          <div class="sport-card" data-category="fitness">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/fitness.jpg" alt="Strength & Conditioning">
+              <span class="sport-badge-tag">Fitness Program</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Strength & Conditioning</h3>
+              <p class="sport-desc">Sports-specific functional strength, barbell mastery, cardiovascular conditioning, and injury prevention.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">All Athletes</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">Flexible Batches</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="fitness">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Yoga & Flexibility -->
+          <div class="sport-card" data-category="fitness">
+            <div class="sport-card-img-wrapper">
+              <img src="./images/yoga.jpg" alt="Yoga & Flexibility">
+              <span class="sport-badge-tag">Fitness Program</span>
+            </div>
+            <div class="sport-card-body">
+              <h3 class="sport-title">Yoga & Flexibility</h3>
+              <p class="sport-desc">Athletic mobility, deep tissue stretching, diaphragmatic breathing control, core stability, and mental focus.</p>
+              <div class="sport-meta-list">
+                <div class="sport-meta-item">
+                  <span class="meta-label">Training Level:</span>
+                  <span class="meta-value">All Skill Levels</span>
+                </div>
+                <div class="sport-meta-item">
+                  <span class="meta-label">Duration:</span>
+                  <span class="meta-value">Monthly / Ongoing</span>
+                </div>
+              </div>
+              <div class="sport-card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" style="width: 100%;" data-sport-details="yoga">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Structure & Methodology -->
+    <section class="section-padding bg-elevated">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Scientific Methodology</span>
+          <h2 class="section-title">Our 4-Stage <span>Athlete Development Model</span></h2>
+          <p class="section-subtitle">Structured progression designed to maximize athletic longevity and competitive success.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">🌱</div>
+            <h3>1. Foundation & Fun</h3>
+            <p>Developing motor skills, hand-eye coordination, balance, basic rules, and fostering genuine love for the sport.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">⚙️</div>
+            <h3>2. Technical Mastery</h3>
+            <p>Repetition of sport-specific strokes, footwork drills, video biomechanics correction, and tactical fundamentals.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">🔥</div>
+            <h3>3. High-Intensity Matchplay</h3>
+            <p>Pressure simulations, tournament preparation, tactical adaptability, and cardiovascular stamina training.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">🏆</div>
+            <h3>4. Championship Elite</h3>
+            <p>One-on-one mentor sessions, personalized nutrition, mental conditioning, and national scouting pathways.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container">
+      <div class="cta-banner-section">
+        <h2>Unsure Which Program Suits You Best?</h2>
+        <p>Schedule a 1-on-1 athletic assessment with our head coaches to evaluate your strengths and choose the right sport.</p>
+        <div class="cta-btn-group">
+          <a href="contact.html" class="btn btn-primary btn-lg" style="background: #ffffff; color: var(--primary);">Book Free Assessment</a>
+          <a href="coaches.html" class="btn btn-outline btn-lg">Meet Our Coaches</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-about">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
+            <div class="brand-icon">⚡</div>
+            <div>Rahul <span>Sports Club</span></div>
+          </a>
+          <p>
+            Rahul Sports Club is a premier multi-sports development center committed to delivering Olympic-grade coaching, sports science, and character-building for athletes of all ages.
+          </p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" class="social-circle-btn" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" class="social-circle-btn" aria-label="Instagram">ig</a>
+            <a href="https://twitter.com" class="social-circle-btn" aria-label="Twitter">tw</a>
+            <a href="https://youtube.com" class="social-circle-btn" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About The Academy</a></li>
+            <li><a href="sports.html">Sports & Programs</a></li>
+            <li><a href="coaches.html">Expert Coaches</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact & Admission</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Sports Programs</h4>
+          <ul class="footer-links">
+            <li><a href="sports.html">Cricket Coaching</a></li>
+            <li><a href="sports.html">Football Academy</a></li>
+            <li><a href="sports.html">Badminton Training</a></li>
+            <li><a href="sports.html">Lawn Tennis</a></li>
+            <li><a href="sports.html">Swimming Academy</a></li>
+            <li><a href="sports.html">Strength & Fitness</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Visit Our Complex</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i>📍</i>
+              <span>Rahul Sports Arena, Sports City Road, Sector 21, New Delhi 110075</span>
+            </li>
+            <li>
+              <i>📞</i>
+              <span>+91 98765 43210 / 011-28034567</span>
+            </li>
+            <li>
+              <i>✉️</i>
+              <span>admissions@rahulsportsclub.com</span>
+            </li>
+            <li>
+              <i>⏰</i>
+              <span>Mon - Sun: 5:30 AM - 9:30 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Rahul Sports Club. All Rights Reserved. Train Hard. Play Strong. Become Champion.</div>
+        <div>Designed with Modern Pure HTML, CSS & Vanilla JS</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sports Details Modal -->
+  <div class="app-modal" id="sportDetailsModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalSportTitle">Sport Program Details</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalSportBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top">↑</button>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
